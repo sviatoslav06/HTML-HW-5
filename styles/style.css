@@ -1,0 +1,9 @@
+ul {
+    list-style-type: none;
+    counter-reset: count;
+}
+
+li::before {
+    content: '[' counter(count) '] - ';
+    counter-increment: count;
+}
